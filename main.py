@@ -18,7 +18,8 @@ def minimum_connection_cost(lengths):
 
 
 if __name__ == "__main__":
-    length_range = 20
-    cable_lengths = list([random.randint(0, length_range) for _ in range(length_range)])
+    length_range = 10
+    cable_lengths = list(
+        [random.randint(length_range // 4, length_range) for _ in range(length_range)])
     print("Cable lengths:", cable_lengths)
     print("Minimum connection cost:", minimum_connection_cost(cable_lengths))
